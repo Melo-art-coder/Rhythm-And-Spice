@@ -627,3 +627,88 @@ footer p{
     }
 
 }
+/* SEARCH BAR */
+
+.search-box{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+.search-box input{
+
+    width:60%;
+
+    padding:15px 20px;
+
+    border-radius:50px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:1rem;
+
+}
+
+
+/* PAYMENT SECTION */
+
+.payment{
+
+    padding:100px 8%;
+
+    background:#111;
+
+    text-align:center;
+
+}
+
+
+#payment-form{
+
+    max-width:500px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+#payment-form input{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#222;
+
+    color:white;
+
+}
+
+
+.payment-row{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.payment-row input{
+
+    width:50%;
+
+    }
