@@ -1,43 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhythm & Spice</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rhythm & Spice | Where Every Bite Has A Beat</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
+
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">🎵 Rhythm & Spice</h2>
+<header>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav class="navbar">
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Where Every Bite Has a Beat </h1>
+<h2 class="logo">🎵 Rhythm & Spice</h2>
 
-            <p>
-                Welcome to Rhythm & Spice, where delicious meals,
-                bold flavors, and unforgettable moments come together.
-            </p>
+<ul class="nav-links">
 
-            <a href="#menu" class="btn">Explore Menu</a>
-        </div>
-    </section>
+<li><a href="#home">Home</a></li>
 
-    <script src="script.js"></script>
+<li><a href="#menu">Menu</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#reviews">Reviews</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="cart-icon">
+
+<i class="fas fa-shopping-cart"></i>
+
+<span id="cart-count">0</span>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Where Every Bite Has A Beat.</h1>
+
+<p>
+
+Experience the perfect harmony of Nigerian classics and American favourites.
+
+Fresh ingredients. Bold flavours. Unforgettable memories.
+
+</p>
+
+<a href="#menu" class="hero-btn">
+
+Order Now
+
+</a>
+
+</div>
+
+</section>
+
+<!-- MENU -->
+
+<section class="menu" id="menu">
+
+<h2 class="section-title">
+
+Our Signature Menu
+
+</h2>
+
+<div class="menu-container">
+
+<div class="food-card">
+
+<img src="images/jollof.jpg" alt="Jollof Rice">
+
+<h3>Smoky Party Jollof</h3>
+
+<p>
+
+Served with grilled chicken & fried plantain.
+
+</p>
+
+<h4>₦6,500</h4>
+
+<button class="add-btn">
+
+Add To Order
+
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/suya.jpg" alt="Suya">
+
+<h3>Premium Suya</h3>
+
+<p>
+
+Tender spicy beef served with onions.
+
+</p>
+
+<h4>₦5,000</h4>
+
+<button class="add-btn">
+
+Add To Order
+
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/ofada.jpg" alt="Ofada Rice">
+
+<h3>Ofada & Ayamase</h3>
+
+<p>
+
+Local rice served with spicy green sauce.
+
+</p>
+
+<h4>₦6,800</h4>
+
+<button class="add-btn">
+
+Add To Order
+
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/burger.jpg" alt="Burger">
+
+<h3>Rhythm Burger</h3>
+
+<p>
+
+Juicy beef burger with fries.
+
+</p>
+
+<h4>₦7,500</h4>
+
+<button class="add-btn">
+
+Add To Order
+
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/wings.jpg" alt="Chicken Wings">
+
+<h3>BBQ Wings</h3>
+
+<p>
+
+Sweet & spicy grilled wings.
+
+</p>
+
+<h4>₦6,200</h4>
+
+<button class="add-btn">
+
+Add To Order
+
+</button>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/milkshake.jpg" alt="Milkshake">
+
+<h3>Melody Milkshake</h3>
+
+<p>
+
+Creamy vanilla & chocolate blend.
+
+</p>
+
+<h4>₦3,000</h4>
+
+<button class="add-btn">
+
+Add To Order
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CART -->
+
+<section class="cart">
+
+<h2>Your Order</h2>
+
+<div id="cart-items">
+
+<p>Your cart is empty.</p>
+
+</div>
+
+<h3>
+
+Total:
+
+<span id="total-price">
+
+₦0
+
+</span>
+
+</h3>
+
+<button id="checkout-btn">
+
+Checkout
+
+</button>
+
+</section>
+    <!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="about-content">
+
+<div class="about-text">
+
+<h2>Our Story</h2>
+
+<p>
+
+At <strong>Rhythm & Spice</strong>, every meal is made with love, passion and bold flavours.
+
+We proudly serve authentic Nigerian classics alongside American favourites, creating a dining experience where food, music and unforgettable memories come together.
+
+</p>
+
+<p>
+
+Whether you're celebrating with friends, enjoying a family dinner or grabbing a quick lunch, there's always something delicious waiting for you.
+
+</p>
+
+<a href="#menu" class="hero-btn">
+
+Explore More
+
+</a>
+
+</div>
+
+<div class="about-image">
+
+<img src="images/chef.jpg" alt="Chef preparing food">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="reviews" id="reviews">
+
+<h2 class="section-title">
+
+What Our Customers Say
+
+</h2>
+
+<div class="reviews-container">
+
+<div class="review-card">
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<p>
+
+"The Jollof Rice was absolutely incredible! I'll definitely be coming back."
+
+</p>
+
+<h4>- Ada N.</h4>
+
+</div>
+
+<div class="review-card">
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<p>
+
+"The burger was juicy, the fries were crispy and the atmosphere was amazing."
+
+</p>
+
+<h4>- Michael O.</h4>
+
+</div>
+
+<div class="review-card">
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<p>
+
+"My family loved every meal. Highly recommended!"
+
+</p>
+
+<h4>- Sarah A.</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+<h2 class="section-title">
+
+Food Gallery
+
+</h2>
+
+<div class="gallery-grid">
+
+<img src="images/gallery1.jpg" alt="Restaurant food">
+
+<img src="images/gallery2.jpg" alt="Restaurant meal">
+
+<img src="images/gallery3.jpg" alt="Restaurant drink">
+
+<img src="images/gallery4.jpg" alt="Restaurant dessert">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">
+
+Reserve A Table
+
+</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea placeholder="Special Request"></textarea>
+
+<button type="submit" class="hero-btn">
+
+Reserve Now
+
+</button>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>🎵 Rhythm & Spice</h2>
+
+<p>
+
+Where Every Bite Has A Beat.
+
+</p>
+
+<p>
+
+Open Daily: 9:00 AM - 11:00 PM
+
+</p>
+
+<p>
+
+📍 Lagos, Nigeria
+
+</p>
+
+<p>
+
+📞 +234 080 368 828 69
+
+</p>
+
+<p>
+
+Designed & Developed by Melody ❤️
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-                              </html>
+
+</html>
