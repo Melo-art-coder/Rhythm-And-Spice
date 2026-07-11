@@ -175,3 +175,72 @@ Estimated time: 20-30 minutes.
 
 
 });
+// FOOD SEARCH
+
+const searchInput = document.getElementById("food-search");
+
+const foodCards = document.querySelectorAll(".food-card");
+
+
+searchInput.addEventListener("keyup",()=>{
+
+
+    const searchValue = searchInput.value.toLowerCase();
+
+
+    foodCards.forEach(card=>{
+
+
+        const foodName = card
+        .querySelector("h3")
+        .textContent
+        .toLowerCase();
+
+
+
+        if(foodName.includes(searchValue)){
+
+
+            card.style.display="block";
+
+
+        }else{
+
+
+            card.style.display="none";
+
+
+        }
+
+
+    });
+
+
+});
+
+
+// PAYMENT DEMO
+
+const paymentForm = document.getElementById("payment-form");
+
+
+paymentForm.addEventListener("submit",(e)=>{
+
+
+    e.preventDefault();
+
+
+    alert(`
+
+🎉 Payment Successful!
+
+Your Rhythm & Spice order has been confirmed.
+
+Thank you for dining with us ❤️
+
+( Demo payment only )
+
+    `);
+
+
+});
